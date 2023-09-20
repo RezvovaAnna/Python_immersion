@@ -3,3 +3,17 @@
 # отрезка-стороны с суммой двух других. Если хотя бы в одном случае отрезок окажется
 # больше суммы двух других, то треугольника с такими сторонами не существует. Отдельно
 # cообщить является ли треугольник разносторонним, равнобедренным или равносторонним.
+
+side_a = int(input("Введите длину стороны а:"))
+side_b = int(input("Введите длину стороны b:"))
+side_c = int(input("Введите длину стороны c:"))
+if side_a + side_b > side_c and side_b + side_c > side_a and side_c + side_a > side_b:
+    print(f"Треугольник со сторонами равными {side_a}, {side_b}, {side_c} существует")
+    if side_a != side_b and side_a != side_c and side_c != side_b:
+        print("И он разносторонний")
+    elif side_a == side_b and side_a == side_c:
+        print("И он равносторонний")
+    elif side_a == side_b or side_a == side_c or side_c == side_b:
+        print("И он равнобедренный")
+else:
+    print(f"Треугольник со сторонами равными {side_a}, {side_b}, {side_c} не существует")
