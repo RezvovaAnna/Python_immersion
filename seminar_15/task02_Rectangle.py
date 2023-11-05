@@ -71,17 +71,6 @@ class Rectangle:
         return Rectangle(width, height)
 
 
-# def par():
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument('-w', metavar='width', type=int, help="Ширина", default=5)
-#     parser.add_argument('-he', metavar='height', type=int, help="Высота", default=5)
-#     args = parser.parse_args()
-#     try:
-#         rectangle = Rectangle(args.width, args.width)
-#     except NegativeValueError as err:
-#         logging.error('Ширина и высота должны быть положительными')
-
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
